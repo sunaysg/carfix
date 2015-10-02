@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.carfix"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.carfix.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.AddCar"
+            android:label="Add Car"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.CarList"
+            android:label="CarList"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.CarData"
+            android:label="CarData"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.EditCar"
+            android:label="Edit Car"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity
+            android:name="com.example.carfix.AddPart"
+            android:label="Add Car"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.PartList"
+            android:label="CarList"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.PartData"
+            android:label="CarData"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.EditPart"
+            android:label="Edit Car"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.AddCard"
+            android:label="Add Card"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.RepCardList"
+            android:label="Add Card"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.RepCardData"
+            android:label="Add Card"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.EditRepCard"
+            android:label="Add Card"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.Reports"
+            android:label="Add Card"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+        android:name="com.example.carfix.ReportDetails"
+        android:label="Add Card"
+        android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.carfix.AboutUs"
+            android:label="Add Card"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+
+
+
+    </application>
+
+</manifest>

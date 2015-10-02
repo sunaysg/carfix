@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alert_background"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Enter date:"
+            android:id="@+id/textView"
+            android:layout_alignRight="@+id/pickYear"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:gravity="center_horizontal" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/pickDay"
+            tools:ignore="NewApi"
+            android:layout_below="@+id/textView" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/pickMonth"
+            tools:ignore="NewApi"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@+id/pickDay" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/pickYear"
+            android:layout_alignTop="@+id/pickMonth"
+            android:layout_toRightOf="@+id/pickMonth"
+            tools:ignore="NewApi" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Get Report"
+            android:id="@+id/btnGetReport"
+            android:layout_below="@+id/pickDay"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/pickYear"
+            android:background="@drawable/button_add"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+</RelativeLayout>

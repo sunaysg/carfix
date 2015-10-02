@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alert_background"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Enter Reg. Number:"
+            android:id="@+id/textView"
+            android:layout_alignRight="@+id/pickYear"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:gravity="center_horizontal" />
+
+        <AutoCompleteTextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/textCarNumb"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentRight="false"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:completionThreshold="1"
+            android:enabled="true"
+            android:inputType="textCapCharacters"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Get Report"
+            android:id="@+id/btnGetReport"
+            android:layout_below="@+id/textCarNumb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textCarNumb"
+            android:background="@drawable/button_add"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+</RelativeLayout>

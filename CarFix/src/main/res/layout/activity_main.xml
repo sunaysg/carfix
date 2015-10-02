@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/stback">
+<!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cars"
+        android:id="@+id/buttonCars"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parts"
+        android:id="@+id/buttonParts"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/buttonCars"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cards"
+        android:id="@+id/buttonCards"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/buttonParts"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reports"
+        android:id="@+id/buttonReports"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/buttonCards"
+        android:layout_centerHorizontal="true" />
+-->
+    <ImageButton
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/buttonCars"
+        android:background="@drawable/button_cars"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="30dp" />
+
+    <ImageButton
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/buttonParts"
+        android:background="@drawable/button_parts"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30dp" />
+
+    <ImageButton
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/buttonCards"
+        android:background="@drawable/button_cards"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="30dp" />
+
+    <ImageButton
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/buttonReports"
+        android:background="@drawable/button_reports"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logoto" />
+
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stback"
+    android:paddingBottom="15dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/backgr"
+        android:id="@+id/relativeLayout">
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/imageButton2"
+            android:layout_alignParentRight="false"
+            android:src="@android:drawable/ic_menu_revert"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_add"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Add Card"
+            android:id="@+id/textView2"
+            android:layout_alignParentLeft="false"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date of check in:"
+        android:id="@+id/textView3"
+        android:layout_alignRight="@+id/textView4"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignLeft="@+id/relativeLayout"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date of check out:"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Car N:"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Repair info:"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Employee name:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Parts list:"
+        android:id="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView7"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Repair cost:"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffff" />
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/textDateIn"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:editable="false"
+        android:layout_below="@+id/relativeLayout" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/textDateOut"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:editable="false"
+        android:hint="Click to Set Date"/>
+
+    <AutoCompleteTextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/textCarN"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:completionThreshold="1"
+        android:enabled="true"
+        android:inputType="textCapCharacters"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/textEmployee"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textCarN"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/textRepInfo"
+        android:layout_below="@+id/textEmployee"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:inputType="textCapSentences" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/textPartList"
+        android:layout_below="@+id/textRepInfo"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:gravity="left" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/textCost"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:enabled="false"/>
+
+
+    <Button
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:text="Save Card"
+        android:id="@+id/saveb"
+        android:background="@drawable/button_add"
+        android:padding="10dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+</RelativeLayout>
